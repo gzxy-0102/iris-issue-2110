@@ -1,0 +1,12 @@
+{
+  "timestamp": "2023-04-07 11:55:21",
+  "latency": 504000,
+  "code": 200,
+  "method": "POST",
+  "path": "/json-api/5ad59dea-c5e4-450d-ae0d-0352ebcdc103/get",
+  "ip": "127.0.0.1",
+  "request": "{\"@explain\":false,\"[]\":{\"file[]\":{\"ai_data_file\":{\"@column\":\"id,file_name,date_format(now(),'%Y-%m-%d %H:%m') as now\"}},\"label[]\":{\"ai_data_file_label\":{\"file_id@\":\"[]/file[]/ai_data_file/id\"}}}}",
+  "response": "{\"code\":404,\"msg\":\"数据源未找到\"}",
+  "bytes_received": 731,
+  "bytes_sent": 605
+}

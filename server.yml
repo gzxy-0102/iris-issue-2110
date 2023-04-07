@@ -1,0 +1,37 @@
+ServerName: Database Api
+Env: development
+Host: 0.0.0.0
+Port: 9508
+EnableCompression: true
+AllowOrigin: "*"
+Iris:
+  # Defaults to info.
+  LogLevel: debug
+  # Defaults to false.
+  EnableOptimizations: true
+  # Defaults to empty.
+  RemoteAddrHeaders:
+  - "X-Real-Ip"
+  - "X-Forwarded-For"
+  - "CF-Connecting-IP"
+  - "True-Client-Ip"
+  - "X-Appengine-Remote-Addr"
+Database:
+  DSN: "root:1qaz@WSX@tcp(10.64.1.87:33306)/database-api?charset=utf8mb4&parseTime=True&loc=Local"
+RequestLog: "./logs/access.log"
+Monitor:
+  Enable: true
+  Path: "/monitor"
+  Auth:
+    Enable: true
+    Username: "admin"
+    Password: "admin"
+Redis:
+  Enable: true
+  Addr: "10.64.1.87:63791"
+  Password: "@990328@Gzxy@"
+Limiter:
+  PerMin: 60
+Auth:
+  Expires: 86400
+  Secret: "@990328@Gzxy@"
