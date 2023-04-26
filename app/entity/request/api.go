@@ -1,7 +1,7 @@
 package request
 
 import (
-	"database-api/app/entity/common"
+	"2110/app/entity/common"
 )
 
 type AddApi struct {
